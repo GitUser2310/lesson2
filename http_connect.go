@@ -20,7 +20,7 @@ func main() {
 
 		body, _ := ioutil.ReadAll(resp.Body)
 
-		w.WriteHeader(200)
+		w.WriteHeader(http.StatusOK)
 		w.Write(body)
 	})
 
