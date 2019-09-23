@@ -12,6 +12,9 @@ func main() {
 	tmp1 := template.New("main")
 	tmp1, _ = tmp1.Parse(`
 				<div style="display: inline-block; background-color: orange; border: 1px solid #aaa; border-radius: 3px; padding: 30px; margin: 20px;">
+				{{if ne . "str"}}
+				  Hello, friends!!!
+				{{end}}
 				<pre>{{.}}</pre>
 				</div>`)
 
